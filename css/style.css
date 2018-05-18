@@ -120,6 +120,14 @@ section#feature p, h3 {
 	text-align: center;
 	padding-top: 10px;
 }
+section#formulario {
+	text-align:left;
+	line-height:20px;
+     padding: 8px;
+}
+ul{
+	text-align: left;
+}
 /* Page Text */
 section#page-text {
 	padding: 30px;
@@ -143,15 +151,27 @@ section#page-text { *zoom: 1; }
 #container > div { *zoom: 1; }
 
 section#page-text > h1 {
-	text-align: center;
+	text-align:left;
 	font-size: 1.4em;
 	margin: 0.8em 0 1.6em;
+    color: black;
 }
-
+section#page-text > h2 {
+	text-align:center;
+	font-size: 1.5em;
+	margin: 0.8em 0 1.6em;
+    color:#DAA520 ;
+}
+section#page-text p{
+	text-indent: 50px;
+}
 section#page-text section h1 {
 	font-size: 1.2em;
 	margin: 1em 0 1em 5px;
+    margin-top: auto;
 	text-align: left;
+    font-style:italic;
+    font-family:sans-serif;
 }
 
 section#page-text article {
@@ -196,7 +216,9 @@ section#page-text > h1:after {
 #menu-images img {
 	max-width: 100%;
 }
-
+image figure{
+	margin-left: 0px;
+}
 table caption {
 	text-align: left;
 	padding-left: 5px;
@@ -294,7 +316,6 @@ section#offers p {
 	-moz-text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 	-o-text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 }
-
 div#formButton {
 	float: right;
 	margin-top: 15px;
@@ -390,7 +411,10 @@ th{
 tr:nth-child(even) {
     background-color: #FAFAD2;
 }
-
+a: link{
+    color:darkgoldenrod;
+    text-decoration: underline;
+}
 /* Footer */
 footer {
 	text-align: center;
@@ -419,14 +443,17 @@ section#pagetext,
 	width: 298px;
 	background-color:#FAFAD2;
 	border: 1px solid;
-	-webkit-border-radius: 4px;
-	-moz-border-radius: 4px;
-	border-radius: 4px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	border-radius: 1px;
 }
-section#location,
+section#location1,
 {
 float:center;
-
+float: left;
+	width: 542px;
+	padding: px;
+	font-size: 0.9em;
 }
 
 #location1distance,
