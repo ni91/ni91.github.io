@@ -104,18 +104,18 @@ header nav ul li a:hover {
 section#feature {
 	width: 95%;
 	height: 362px;
-	background: center; 
+	background: center;
+    background-color: #DAA520;
 	box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
 	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
 	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
 	-o-box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
 	border-bottom: 1px solid ;
-	margin-bottom: 1em;	font-size: 1.2em;
+	margin-bottom: 1em;	font-size: 1.0em;
     margin: 0.8em 0.8 0em;
 	font-family: Georgia;
     color: black;
 }
-
 section#feature p, h3 {
 	text-align: center;
 	padding-top: 10px;
@@ -127,6 +127,10 @@ section#formulario {
 }
 ul{
 	text-align: left;
+}
+button{
+    height: 60px;
+    width: 150px;
 }
 /* Page Text */
 section#page-text {
@@ -449,11 +453,15 @@ section#pagetext,
 }
 section#location1,
 {
-float:center;
-float: left;
+float:right;
 	width: 542px;
 	padding: px;
 	font-size: 0.9em;
+    color: black;
+}
+
+.location-phone,{
+    float: right;
 }
 
 #location1distance,
