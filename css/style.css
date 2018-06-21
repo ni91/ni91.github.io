@@ -58,7 +58,7 @@ a:focus {
 	text-decoration: underline;
 }
 #container {
-	width: 960px;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -72,6 +72,7 @@ header div#logo {
 	font-size: 2em;
 	font-style: italic;
 	font-family: Georgia;
+	width: 100%;
 }
 header nav {
 	float: right;
@@ -102,28 +103,39 @@ header nav ul li a:hover {
 }
 /* Home Featue */
 section#feature {
-	width: 95%;
-	height: 362px;
-	background: center;
     background-color: #DAA520;
-	box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
-	-moz-box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
-	-webkit-box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
-	-o-box-shadow: 0 0 15px rgba(0,0,0,0.75) inset;
-	border-bottom: 1px solid ;
-	margin-bottom: 1em;	font-size: 1.0em;
-    margin: 0.8em 0.8 0em;
+	margin-bottom: 1em;	
+	font-size: 1.0em;
+    margin: 0.1em 0.1 0em;
 	font-family: Georgia;
     color: black;
 }
-section#feature p, h3 {
-	text-align: center;
+section#id_feature p, h1 {
+	text-align: left;
+	font-size: 20px;
 	padding-top: 10px;
 }
-section#formulario {
-	text-align:left;
+section#id_feature h3 {
+	text-align: center;
+	font-size: 20px;
+	padding-top: 10px;
+}
+section#feature figure{
+	margin-bottom: 60px;
+	padding:8px;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+section#feature button{
+	padding:8px;
+    margin-bottom:inherit;
+    margin-left:50px;
+}
+section#formulario p {
+	text-align:;
 	line-height:20px;
      padding: 8px;
+     margin-bottom: 12px;
 }
 ul{
 	text-align: left;
@@ -137,19 +149,12 @@ section#page-text {
 	padding: 30px;
 	font-size: 0.9em;
 	background: #FAFAD2 ;
-	box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	-o-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	border-bottom: 1px white;
 	text-align: center;
 }
-
 /* Clearfix Hack */
 section#page-text:before, section#page-text:after { content: ""; display: table; }
 section#page-text:after { clear: both; }
 section#page-text { *zoom: 1; }
-
 #container > div:before, #container > div:after { content: ""; display: table; }
 #container > div:after { clear: both; }
 #container > div { *zoom: 1; }
@@ -209,6 +214,7 @@ section#page-text > h1:after {
 
 #menu-images figure {
 	margin-bottom: 1em;
+	width: 1100px;
 }
 
 #menu-images figcaption {
@@ -222,6 +228,7 @@ section#page-text > h1:after {
 }
 image figure{
 	margin-left: 0px;
+	float: center;
 }
 table caption {
 	text-align: left;
@@ -234,68 +241,51 @@ ul#sitemap {
 	list-style: disc;
 	padding-left: 20px;
 }
-
 ul#sitemap a {
 	color: #DAA520;
 }
-
 ul#sitemap li {
 	padding: 0.5em 0;
 }
-
 section#page-text dl {
 	margin: 0;
 	padding: 0;
 }
-
 section#page-text dt {
 	padding-top: 1em;
 	font-size: 0.9em;
 }
-
 section#page-text dd {
 	padding: 0.3em 1;
     float: left;
 }
-
 /* Home Text */
 section#home-text {
 	float: left;
 	width: 542px;
-	padding: 15px;
+	padding: 0px;
+	margin: 0;
 	font-size: 0.9em;
-	background:#FAFAD2;
-	box-shadow: 0 1px 9px rgba(0,0,0,0.3);
-	-webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	-moz-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	-o-box-shadow: 0 1px 10px rgba(0,0,0,0.3);
-	border-bottom: 1px solid white;
+	background:	#F8F8FF;
 }
-
 section#home-text h1 {
 	font-weight: bold;
     font-size:1.2em;
 	margin-bottom: 0.8em;
     color: #DAA520;
 }
-
 section#home-text p,
 section#page-text p {
 	line-height: 1.8em;
 	margin: 0.9m 0 0;
 	text-align: left;
 }
-
 section#offers {
 	color: white;
 	width: 340px;
 	padding: 15px;
 	margin-left: 588px;;
 	background: #DAA520;
-	box-shadow: 0 0 10px rgba(0,0,0,0.6) inset;
-	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6) inset;
-	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.6) inset;
-	-o-box-shadow: 0 0 10px rgba(0,0,0,0.6) inset;
 	border-bottom: 1px solid white;
 	font-size: 0.9em;
 	line-height: 1.0em;
@@ -306,26 +296,17 @@ section#offers ul li {
 section#contact h1,
 section#offers h1 {
 	font-weight: bold;
-	text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-	-webkit-text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-	-moz-text-shadow: 0 1px 3px rgba(0,0,0,0.8);
-	-o-text-shadow: 0 1px 3px rgba(0,0,0,0.8);
 }
 section#contact p,
 section#offers p {
 	line-height: 1.4em;
 	margin: 0.5em 0 0;
-	text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-	-webkit-text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-	-moz-text-shadow: 0 1px 2px rgba(0,0,0,0.8);
-	-o-text-shadow: 0 1px 2px rgba(0,0,0,0.8);
 }
 div#formButton {
 	float: right;
 	margin-top: 15px;
 	width: 372px;
 }
-
 div#formButton a {
 	display: block;
 	color: white;
@@ -337,7 +318,6 @@ div#formButton a {
 	-webkit-border-radius: 5px;
 	-o-border-radius: 5px;
 	background-image:	#FAFAD2;
-
 }
 div#formButton a:hover {
 	text-decoration: none;
@@ -346,25 +326,24 @@ div#formButton a:hover {
 		left top,
 		color-stop:#DAA520;
 		color-stop: #DAA520;
-	);
 }
-
 div.field {
 	line-height: 1.4em;
 	margin: 0.8em 0 0;
 	text-align: right;
 }
-
-div. container{
+div#container{
     width: auto;
     height: auto;
+}
+div#container figure {
+	float: center;
 }
 form label {
 	width: 320px;
 	display: inline-block;
 	vertical-align: top;
 }
-
 form input[type="text"],
 form input[type="email"],
 form input[type="tel"],
@@ -374,33 +353,27 @@ form input[type="datetime-local"] {
 	border: 1px solid #999;
 	padding: 3px;
 }
-
 form select {
 	width: 180px;
 }
-
 form span.required {
 	color: #DAA520;
 	font-size: 0.8em;
 }
-
 form p.validation-tip {
 	color: #DAA520;
 }
-
 form fieldset {
 	margin: 1em 0;
 	padding: 1em;
 	border: 1px solid #999;
 }
-
 /*Table */
 table {
     font-family: Georgia, sans-serif;
     border-collapse: collapse;
     width: 100%;
 }
-
 td, th {
     border: 1px solid #DAA520;
     text-align: left;
@@ -428,20 +401,22 @@ footer {
 	margin: 1em;
 	clear: both;
 }
-
 footer a,
 footer a:visited {
 	color: #636363;
 }
-
 footer a:hover,
 footer a:focus {
 	color: #DAA520;
 }
-/*************************
-	GeoLocation: Chapter 11
-*************************/
-
+/****/
+textarea{
+	float: left;
+	width: 542px;
+	padding: 0px;
+	margin: 20;
+	margin-left: 60px;
+}
 section#pagetext,
  {
 	width: 298px;
@@ -459,23 +434,38 @@ float:right;
 	font-size: 0.9em;
     color: black;
 }
-
 .location-phone,{
     float: right;
+    padding-top: 10em;
 }
-
 #location1distance,
  {
-	padding-top: 1em;
-     
+	padding-top: 1em;   
 }
-
 .nearest #location1distance,
 {
 	font-weight: bold;
 }
-
 /* Float Fixes */
 .clearfix:before, .clearfix:after { content: ""; display: table; }
 .clearfix:after { clear: both; }
 .clearfix { *zoom: 1; }
+
+#imagemnote {
+	width: 100%;
+}
+@media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  .right {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  .menu, .main, .right {
+    width: 100%;
+  }
